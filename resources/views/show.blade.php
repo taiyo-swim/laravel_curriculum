@@ -13,13 +13,14 @@
     </head>
     <body>
         <h1>Blog Name</h1>
+            <p class="edit">[<a href="/posts/{{ $post->id }}/edit">編集</a>]</p>
             <div class="post">
                 <h2 class="title">{{ $post->title }}</h2>
                 <p class="body">{{ $post->body }}</p>
                 <p class="updated_at">{{ $post->updated_at}}</p>
             </div>
             <div class="footer">
-                <a href="/">戻る</a>
+                [<a href="/">戻る</a>]
             </div>
     </body>
 </html>
